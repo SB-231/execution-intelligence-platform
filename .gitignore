@@ -39,3 +39,18 @@
 
 # debug information files
 *.dwo
+
+# build artifacts
+build/
+cpp_engine/build/
+
+# run artifacts
+runs/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# mac
+.DS_Store
