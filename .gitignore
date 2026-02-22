@@ -40,10 +40,6 @@
 # debug information files
 *.dwo
 
-# build artifacts
-build/
-cpp_engine/build/
-
 # run artifacts
 runs/
 
@@ -54,3 +50,12 @@ __pycache__/
 
 # mac
 .DS_Store
+
+# build artifacts
+build/
+cpp_engine/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
