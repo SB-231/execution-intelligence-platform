@@ -5,11 +5,15 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+find_package(yaml-cpp REQUIRED)
+
 add_executable(engine
     src/main.cpp
+    src/config.cpp
 )
 
 target_include_directories(engine PRIVATE include)
+target_link_libraries(engine PRIVATE yaml-cpp::yaml-cpp)
 
 # Warnings
 if (MSVC)
