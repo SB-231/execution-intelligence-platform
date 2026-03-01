@@ -13,6 +13,8 @@ add_executable(engine
     src/jsonl_logger.cpp
     src/time_utils.cpp
     src/session.cpp
+    src/dummy_feed.cpp
+    src/consumer.cpp
 )
 
 target_include_directories(engine PRIVATE include)
