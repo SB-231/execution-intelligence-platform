@@ -10,6 +10,9 @@ find_package(yaml-cpp REQUIRED)
 add_executable(engine
     src/main.cpp
     src/config.cpp
+    src/jsonl_logger.cpp
+    src/time_utils.cpp
+    src/session.cpp
 )
 
 target_include_directories(engine PRIVATE include)
